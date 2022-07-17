@@ -7,7 +7,7 @@ pip install -r requirements.txt
 python manage.py migrate
 
 Завантажити fixtures 
-python3 manage.py loaddata subjects.json
+python manage.py loaddata subjects.json
 
 Запустити сервер
 python manage.py runserver
