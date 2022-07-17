@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+        <a href="{% url 'generation-card' %}">Генератор карт </a> ||
+        <a href="{% url 'card' %}">Список карт</a> ||
+        <a href="{% url 'search' %}">Пошук </a>
+
+</head>
+<body>
+{% for field in all_card %}
+<table border="2">
+    <tr>
+        <th>Серія карти:</th>
+        <th>{{ field.series }}</th>
+    </tr>
+    <tr>
+        <th>Номер картки:</th>
+        <th>{{ field.number }}</th>
+    </tr>
+    <tr>
+        <th>Дата випуску картки:</th>
+        <th>{{ field.start_date }}</th>
+    </tr>
+    <tr>
+        <th>Дата кінця дії картки:</th>
+        <th>{{ field.end_date }}</th>
+    </tr>
+    <tr>
+        <th>Статус картки:</th>
+        <th>{{ field.status }}</th>
+    <tr>
+        <th>Детальна інформація:</th>
+        <th><a href="{% url 'detail-card' field.id %} ">Дивитись</a>
+        </th>
+</table>
+{% endfor %}
+
+<div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+</body>
+</html>

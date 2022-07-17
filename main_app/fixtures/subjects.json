@@ -1,0 +1,250 @@
+[
+{
+  "model": "main_app.card",
+  "pk": 50,
+  "fields": {
+    "series": 2,
+    "number": "1231131232314323",
+    "start_date": "2022-07-17T09:26:19.654Z",
+    "end_date": "2022-07-17T09:27:00Z",
+    "cvv": "123",
+    "balance": 0.0,
+    "status": "overdue"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 51,
+  "fields": {
+    "series": 1,
+    "number": "4609042762108035",
+    "start_date": "2022-07-17T09:26:32.204Z",
+    "end_date": "2023-09-17T09:26:32.202Z",
+    "cvv": "226",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 52,
+  "fields": {
+    "series": 1,
+    "number": "6147117822560229",
+    "start_date": "2022-07-17T09:26:32.217Z",
+    "end_date": "2023-09-17T09:26:32.216Z",
+    "cvv": "933",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 53,
+  "fields": {
+    "series": 1,
+    "number": "7434520395257534",
+    "start_date": "2022-07-17T09:26:32.224Z",
+    "end_date": "2023-09-17T09:26:32.223Z",
+    "cvv": "745",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 54,
+  "fields": {
+    "series": 1,
+    "number": "9880604143015665",
+    "start_date": "2022-07-17T09:26:32.231Z",
+    "end_date": "2023-09-17T09:26:32.230Z",
+    "cvv": "043",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 55,
+  "fields": {
+    "series": 1,
+    "number": "8656020382572928",
+    "start_date": "2022-07-17T09:26:32.237Z",
+    "end_date": "2023-09-17T09:26:32.236Z",
+    "cvv": "934",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 56,
+  "fields": {
+    "series": 2,
+    "number": "1449114116293024",
+    "start_date": "2022-07-17T09:26:55.194Z",
+    "end_date": "2045-08-17T09:26:55.193Z",
+    "cvv": "516",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 57,
+  "fields": {
+    "series": 2,
+    "number": "3217220168154359",
+    "start_date": "2022-07-17T09:26:55.232Z",
+    "end_date": "2045-08-17T09:26:55.231Z",
+    "cvv": "528",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 58,
+  "fields": {
+    "series": 2,
+    "number": "5902140629690621",
+    "start_date": "2022-07-17T09:26:55.236Z",
+    "end_date": "2045-08-17T09:26:55.236Z",
+    "cvv": "105",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 59,
+  "fields": {
+    "series": 2,
+    "number": "367300237002177",
+    "start_date": "2022-07-17T09:26:55.240Z",
+    "end_date": "2045-08-17T09:26:55.240Z",
+    "cvv": "931",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 60,
+  "fields": {
+    "series": 2,
+    "number": "5529577432747850",
+    "start_date": "2022-07-17T09:26:55.245Z",
+    "end_date": "2045-08-17T09:26:55.245Z",
+    "cvv": "029",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 61,
+  "fields": {
+    "series": 2,
+    "number": "1571550287889967",
+    "start_date": "2022-07-17T09:26:55.250Z",
+    "end_date": "2045-08-17T09:26:55.250Z",
+    "cvv": "046",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 62,
+  "fields": {
+    "series": 2,
+    "number": "472806736449214",
+    "start_date": "2022-07-17T09:26:55.254Z",
+    "end_date": "2045-08-17T09:26:55.254Z",
+    "cvv": "994",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 63,
+  "fields": {
+    "series": 2,
+    "number": "4629774508510901",
+    "start_date": "2022-07-17T09:26:55.258Z",
+    "end_date": "2045-08-17T09:26:55.258Z",
+    "cvv": "945",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 64,
+  "fields": {
+    "series": 2,
+    "number": "6805581442885192",
+    "start_date": "2022-07-17T09:26:55.263Z",
+    "end_date": "2045-08-17T09:26:55.263Z",
+    "cvv": "934",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 65,
+  "fields": {
+    "series": 2,
+    "number": "9406927312299922",
+    "start_date": "2022-07-17T09:26:55.268Z",
+    "end_date": "2045-08-17T09:26:55.267Z",
+    "cvv": "370",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 66,
+  "fields": {
+    "series": 2,
+    "number": "8146095759487203",
+    "start_date": "2022-07-17T09:26:55.274Z",
+    "end_date": "2045-08-17T09:26:55.274Z",
+    "cvv": "293",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.card",
+  "pk": 67,
+  "fields": {
+    "series": 2,
+    "number": "2125868814810679",
+    "start_date": "2022-07-17T09:26:55.279Z",
+    "end_date": "2045-08-17T09:26:55.278Z",
+    "cvv": "174",
+    "balance": 0.0,
+    "status": "not activated"
+  }
+},
+{
+  "model": "main_app.series",
+  "pk": 1,
+  "fields": {
+    "name": "MasterCard"
+  }
+},
+{
+  "model": "main_app.series",
+  "pk": 2,
+  "fields": {
+    "name": "Visa"
+  }
+}
+]

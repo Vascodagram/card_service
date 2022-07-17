@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Всі транзакції</h1>
+{% for trans in trans_list %}
+<table border="2">
+    <tr>
+        <th>Виписка по карті:</th>
+        <th>{{ trans.card.number }}</th>
+
+    </tr>
+    <tr>
+        <th>Назва транзакції:</th>
+        <th>{{ trans.name }}</th>
+    </tr>
+    <tr>
+        <th>Cума транзакції:</th>
+        <th>{{ trans.transaction }}</th>
+    </tr>
+</table>
+<p>
+    {% endfor %}
+
+<div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+
+</body>
+</html>

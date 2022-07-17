@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<form method="post" action=""> {% csrf_token %}
+    <table border="2">
+        <h1>Генератор банківських карт</h1>
+
+        <tr>
+            <th>Серія карти:</th>
+            <th>{{ form.series }}</th>
+        </tr>
+        <tr>
+            <th>Кількість карток:</th>
+            <th>{{ form.value }}</th>
+        </tr>
+        <tr>
+            <th>Термін дії (рік) :</th>
+            <th>{{ form.year }}</th>
+        </tr>
+        <tr>
+            <th>Термін дії (місяць):</th>
+            <th>{{ form.month }}</th>
+        </tr>
+    </table>
+    <button type="submit" class="save btn btn-default">Згенерувати</button>
+</form>
+
+</body>
+</html>

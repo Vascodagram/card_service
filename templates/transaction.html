@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="post">{% csrf_token %}
+
+    <h1>Створення транзакції</h1>
+    <table border="2">
+        <tr>
+            <th> Назва транзакції:</th>
+            <th>{{ form.name }}</th>
+        </tr>
+        <tr>
+            <th> Сума платежу:</th>
+            <th>{{ form.transaction }}</th>
+        </tr>
+    </table>
+    <p>
+        <input type="submit" value="Зробити транзакцію"/>
+</form>
+</body>
+</html>

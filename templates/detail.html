@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<a href="{% url 'generation-card' %}">Генератор карт </a> ||
+<a href="{% url 'card' %}">Список карт</a> ||
+<a href="{% url 'search' %}">Пошук </a>
+<body>
+<H1>Інформація по карті</H1>
+<table border="2">
+    <tr>
+        <th>Серія карти:</th>
+        <th>{{ detail_card.series }}</th>
+    </tr>
+    <tr>
+        <th>Номер картки:</th>
+        <th>{{ detail_card.number }}</th>
+    </tr>
+    <tr>
+        <th>Дата випуску картки:</th>
+        <th>{{ detail_card.start_date}}</th>
+    </tr>
+    <tr>
+        <th>Дата кінця дії картки:</th>
+        <th>{{ detail_card.end_date }}</th>
+    </tr>
+    <tr>
+        <th>CVV:</th>
+        <th>{{ detail_card.cvv }}</th>
+    </tr>
+    <tr>
+        <th>Баланс по карті:</th>
+        <th>{{ detail_card.balance }}</th>
+    </tr>
+    <tr>
+        <th>Статус картки:</th>
+        <th>{{ detail_card.status }}</th>
+    </tr>
+</table>
+
+<H1>Функції</H1>
+<table border="2">
+    <form method="post" action="{% url 'edit' detail_card.id %}"> {% csrf_token %}
+        <tr>
+            <th>{{ form.as_p }}</th>
+            <th>
+                <button type="submit" class="save btn btn-default">Зберегти</button>
+            </th>
+        </tr>
+    </form>
+    <form method="post" action="{% url 'transaction' pk=detail_card.id  %}"> {% csrf_token %}
+        <tr>
+            <th>
+                Створити транзакцію
+            </th>
+            <th>
+                <button type="submit" class="save btn btn-default">Створити</button>
+            </th>
+        </tr>
+    </form>
+    <tr>
+        <th>Видалити запис</th>
+        <th><a href="{% url 'delete' detail_card.id %} ">Видалити</a></th>
+    </tr>
+    <tr>
+        <th>Список транзакцій</th>
+        <th><a href="{% url 'list-transaction' detail_card.pk %} ">Дивитись</a></th>
+    </tr>
+</table>
+</body>
+</html>
